@@ -1,7 +1,27 @@
+# blog info
+title : 'jihyun's Blog'
+description: '개인적으로 공부한 내용을 기록하는 블로그입니다.'
+url: https://kimjihyunkr.github.io/
+logo: ''
+
+
+# blog navigation
+nav : 
+  Home:
+     - '/blog/'
+  Categories:
+    - '/'
+    - { TIL : '/blog/categories#til' }
+    - { React : '/blog/categories#react' }
+
+
+
+# search engin ?
 collections:
   authors:
     output: true
-  
+
+# auto set layout  
 defaults:
   - scope:
       path: ""

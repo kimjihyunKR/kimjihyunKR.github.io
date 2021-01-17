@@ -1,5 +1,25 @@
 ---
 layout: default
-title: test
+title: Home
 ---
-<h1>Hellow word !</h1>
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+  <hr>
+
+  {% for category in site.data.categories %}
+    <a href="{{ category.link }}">{{ category.name }}</a> 
+    {% assign category_posts = site.posts | where: 'category', category.name %}
+    {% for post in category_posts %}
+      {{post.title}} : 
+    {% endfor%}
+    <br>
+  {% endfor%}
+
+</ul>
