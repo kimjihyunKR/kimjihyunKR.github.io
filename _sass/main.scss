@@ -16,6 +16,7 @@ $grayColor : rgb(243, 241, 236);
 }
 html {
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -28,12 +29,12 @@ html {
   padding: 0 15px;
 }
 
-h1 { font-size: 1.8rem;   margin: .5rem 0; }
-h2 { font-size: 1.6rem;   margin: .5rem 0; }
-h3 { font-size: 1.4rem;   margin: .5rem 0; }
-h4 { font-size: 1.2rem;   margin: .5rem 0; }
-h5 { font-size: 1.0rem;   margin: .5rem 0; }
-h6 { font-size: 0.8rem;   margin: .5rem 0; }
+h1 { font-size: 1.8rem;   margin: .7rem 0; }
+h2 { font-size: 1.6rem;   margin: .7rem 0; }
+h3 { font-size: 1.4rem;   margin: .7rem 0; }
+h4 { font-size: 1.2rem;   margin: .7rem 0; }
+h5 { font-size: 1.0rem;   margin: .7rem 0; }
+h6 { font-size: 0.8rem;   margin: .7rem 0; }
 p { margin : .5rem 0; }
 
 a { text-decoration: none; }
@@ -88,6 +89,20 @@ footer {
   }
 }
 
+// table of content
+ul.table-content {
+  margin: 1rem 0;
+  padding: 0 !important;
+  list-style: none;
+  a{
+    color: $secondaryColor;
+  }
+  a.current, a:hover{
+    color: $secondaryFontColor;
+  }
+  
+}
+
 .post-header {
   border-bottom: 1.5px solid $grayColor;
   padding: 1rem 0;
@@ -112,12 +127,13 @@ footer {
 }
 
 .post-content{
-  h1 { font-size: 1.4rem; }
-  h2 { font-size: 1.2rem; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.3rem; }
   h3 { font-size: 1.15rem; }
+  h4 { font-size: 1rem;}
 
   ul, ol {
-    padding-left : 1rem;
+    padding-left : 20px;
   }
 
   a { 
@@ -140,7 +156,7 @@ footer {
 
   blockquote {
     margin: .5rem 0;
-    padding: 8px 8px 0 8px;
+    padding: 8px ;
     background-color: $grayColor;
     border-left: 5px solid $secondaryColor;
     p {
