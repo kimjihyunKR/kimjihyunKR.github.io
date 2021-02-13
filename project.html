@@ -1,0 +1,16 @@
+---
+layout: default
+title: Staff
+---
+<section>
+  <h1>Project</h1>
+  <ul class="project-box">
+    {% for post in site.project %}
+      <li class="project-item">
+        <a href="{{ project.url }}">
+          <h3>{{ project.title }}</h3>
+      </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

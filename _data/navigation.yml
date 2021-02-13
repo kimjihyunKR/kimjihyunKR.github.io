@@ -1,8 +1,10 @@
-- name: Home
+- name: kim jihyun
   link: /
+- name: Project
+  link: /project
+- name: TIL
+  link: /til
+- name: Blog
+  link: https://potato-hyun.tistory.com/
 - name: About
   link: /about
-- name: Categories
-  link: /blog/categories
-- name: Staff
-  link: /staff

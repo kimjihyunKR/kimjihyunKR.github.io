@@ -1,3 +1,178 @@
-.current {
-  color: green;
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+// color set
+$defaultColor : #000000;
+$emphasisColor : rgb(255, 99, 72);
+$secondaryColor : rgb(189, 189, 189);
+$secondaryFontColor : rgb(78, 78, 78);
+$grayColor : rgb(243, 241, 236);
+
+// default
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+}
+html {
+  font-size: 15px;
+}
+
+::selection {
+  background: #ffee95;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 950px;
+  padding: 0 15px;
+}
+
+h1 { font-size: 1.8rem;   margin: .5rem 0; }
+h2 { font-size: 1.6rem;   margin: .5rem 0; }
+h3 { font-size: 1.4rem;   margin: .5rem 0; }
+h4 { font-size: 1.2rem;   margin: .5rem 0; }
+h5 { font-size: 1.0rem;   margin: .5rem 0; }
+h6 { font-size: 0.8rem;   margin: .5rem 0; }
+p { margin : .5rem 0; }
+
+a { text-decoration: none; }
+a:visited { color: black; }
+a:focus { color: black; }
+a:-webkit-any-link { color: black; }
+
+// navigation style
+nav {
+  padding: .5rem 0;
+  ul {
+    display: flex;
+    list-style: none;
+    font-size: .8rem;
+    flex-wrap: wrap;
+    :first-child {
+      flex: 1;
+      margin-left : 0;
+    }
+
+    li {
+      margin-left : .8rem;
+    }
+
+    a {
+      color : $secondaryFontColor;
+    }
+  }
+}
+
+// footer
+footer {
+  text-align: center;
+  font-size: .7rem;
+  padding: 50px 0 ;
+}
+
+// index posts box 
+.til-posts {
+  list-style: none;
+
+  .til-post {
+    padding: 1rem 0;
+    border-bottom: 1.5px solid $grayColor;
+    h2 {
+      font-size: 1.3rem;
+    }
+    .til-preview {
+      font-size: .8rem;
+      color: $secondaryFontColor;
+    }
+  }
+}
+
+.post-header {
+  border-bottom: 1.5px solid $grayColor;
+  padding: 1rem 0;
+
+  .date {
+    font-size: .8rem;
+  }
+  .tag-wrap {
+    display: flex;
+    gap : .5rem;
+    padding:.5rem 0;
+    font-size: .8rem;
+
+    .tag {
+      width: fit-content;
+      padding: .1rem .5rem;
+      background: $grayColor;
+      color: $secondaryFontColor;
+      border-radius: 4px;
+    }
+  }
+}
+
+.post-content{
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.2rem; }
+  h3 { font-size: 1.15rem; }
+
+  ul, ol {
+    padding-left : 1rem;
+  }
+
+  a { 
+    color: $secondaryColor; 
+    border-bottom: 1px solid $secondaryColor; 
+    transition: color .3s linear;
+  }
+
+  a:hover { color: $secondaryFontColor; transition: color .3s linear;}
+
+  u {
+    text-decoration: none;
+    border-bottom: 1px solid $secondaryFontColor; 
+  }
+
+  strong {
+    font-weight: 500;
+    color : $emphasisColor;
+  }
+
+  blockquote {
+    margin: .5rem 0;
+    padding: 8px 8px 0 8px;
+    background-color: $grayColor;
+    border-left: 5px solid $secondaryColor;
+    p {
+      margin : .3rem 0 ;
+    }
+  }
+
+  pre {
+    margin: .5rem 0;
+    padding : 1.5rem 1.5rem 1rem 1.5rem;
+    border-radius: 16px;
+    overflow-x: scroll;
+    background-color: $grayColor;
+    code {
+      padding: 0;
+      background: none;
+      color: $defaultColor;
+      border-radius: 0;
+    }
+  }
+  code {
+    word-spacing: 2px;
+    font-size: .9rem;
+    padding: 0 .5rem;
+    background: $grayColor;
+    border-radius: 4px;
+    color: $emphasisColor;
+  }
+}
+
+hr {
+  margin: 1rem 0;
+  border : none;
+  border-bottom: .15rem solid $grayColor;
 }

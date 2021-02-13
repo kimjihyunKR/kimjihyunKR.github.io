@@ -1,8 +1,8 @@
-# blog info
-title : 'jihyun's Blog'
-description: '개인적으로 공부한 내용을 기록하는 블로그입니다.'
-url: https://kimjihyunkr.github.io/
-logo: ''
+# # blog info
+# title : 'jihyun's Blog'
+# description: '개인적으로 공부한 내용을 기록하는 블로그입니다.'
+# url: https://kimjihyunkr.github.io/
+# logo: ''
 
 
 # blog navigation
@@ -13,6 +13,7 @@ nav :
     - '/'
     - { TIL : '/blog/categories#til' }
     - { React : '/blog/categories#react' }
+    - { Algorithm : '/blog/categories#algorithm'}
 
 
 
